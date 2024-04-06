@@ -3,106 +3,201 @@ body {
     background-image: url('https://content.codecademy.com/courses/learn-css-selectors-visual-rules/hypnotize_bg.png');
   }
   
-  header {
-    padding: 20px 0;
-  }
-  
-  header .row,
-  footer .row {
+header{
+  display: flex;
+  padding: 20px 0px;
+  align-items: center;
+  justify-content: space-between;
+  align-content: space-between;
+  flex-direction: row;
+}
+
+.right a{
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+  font-size: 25px;
+}
+
+footer .row{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+
+h1{
+  font-weight: 700;
+  margin: 0;
+  padding: 0px;
+  font-size: 30px;
+}
+
+footer .row{
+  margin-top: 0px;
+}
+
+.jumbotron{
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  color: #ffffff;
+  background-image: url("colin-watts-ulwN8mzZezU-unsplash.jpg");
+  height: 400px;
+}
+
+.jumbotron h2{
+  font-size: 60px;
+  font-size: 700;
+  margin: 0;
+  color: #fff;
+}
+
+.aboutme{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.aboutme img{
+  width:  300px;
+  height: 300px;
+}
+
+.aboutme p{
+  width: 50%;
+}
+
+section p{
+  margin-top: 10px;
+}
+
+.education{
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0px;
+  padding: 0;
+}
+
+.portrait p{
+  text-align: center;
+}
+
+
+.education img {
+  width:  100%;
+  height: 300px;
+
+}
+
+.planguages{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.planguages img {
+  width:  100%;
+  height: 300px;
+}
+
+.planguages p{
+  text-align: center;
+}
+
+
+.planguages img{
+  max-height: 150px;
+  max-width:  150px;
+  z-index: 1;
+  width: 100%;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) and (orientation: portrait){
+
+  header{
     display: flex;
+    flex-direction: column;
     align-items: center;
   }
   
-  h1 {
-    font-weight: 700;
-    margin: 0;
-  }
-  
-  nav {
+  .right{
     display: flex;
-    justify-content: flex-end;
+    font-size: 20px;
+    flex-direction: column;
+    text-align: center;
   }
-  
-  a {
-    padding: 0 20px;
-    margin: 0;
-  }
-  
-  .jumbotron {
-    display: flex;
+
+  .left{
     align-items: center;
-    background-image: url('https://images.unsplash.com/photo-1709390614177-055d6f7af931?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDQ5fF84ekZIdWhSaHlvfHxlbnwwfHx8fHw%3D');
-    background-size: cover;
-    color: #ffffff;
-    height: 400px;
+    text-align: center;
   }
-  
-  .jumbotron h2 {
-    font-size: 60px;
-    font-weight: 700;
-    margin: 0;
-    color: #fff;
+
+  h1{
+    font-size: 25px;
   }
-  
-  .jumbotron h3 {
-    margin: 0 0 20px;
-    color: #fff;
-  }
-  
-  section .row img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+
+  .aboutme p{
     width: 100%;
-  }
-  
-  .col-md-6 {
-    margin: 0 0 30px;
-  }
-  
-  .btn.btn-primary {
-    border-radius: 2px;
-    border: 0px;
-    color: #fbd1d5;
-    background-color: #ffffff;
-  }
-  
-  .btn.btn-primary:hover {
-    color: #ffffff;
-    background-color: #fbd1d5;
-  }
-  
-  .btn-secondary {
-    background-color: #2a70e0;
-    color: #ffffff;
-    margin: 0 0 30px;
-  }
-  
-  .portrait {
-    width:  400px;
-    height: 300px;
-  }
-  
-  figure img {
-    width: 100%;
-    height: auto;
-  }
-  
-  figure {
-    margin-bottom: 30px;
-  }
-  
-  footer {
-    font-size: 12px;
-    padding: 20px 0;
-  }
-  
-  footer .col-sm-8 {
+  } 
+
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 480px) and (orientation: landscape){
+
+  header{
     display: flex;
-    justify-content: flex-end;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-direction: column;
   }
   
-  footer ul {
-    list-style: none;
+  .right{
+    display: flex;
+    flex-direction: row;
+    text-align: start;
   }
-  
+
+  .right a{
+    font-size: 15px;
+  }
+  .left{
+    align-items: flex-start;
+    text-align: start;
+  }
+
+  h1{
+    font-size: 20px;
+  }
+
+  .aboutme p{
+    width: 100%;
+  } 
+
+}
+
+
+@media only screen and (orientation: landscape){
+
+  .right a{
+    align-items: center;
+    justify-content: space-around;
+    padding: 0px;
+    font-size: 22px;
+    text-decoration: none;
+  }
+
+  .right a+a::before {
+    color: red;
+    padding: 10px;
+    content: ">";
+  }
+
+}

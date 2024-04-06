@@ -1,63 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>My Personal Portfolio</title>
-        <meta charset="utf-8" />
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
-        <link href="style.css" type="text/css" rel="stylesheet">
-    </head>
+  <head>
+    <title>My Personal Portfolio</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+    <link href="style.css" type="text/css" rel="stylesheet">
+ </head>
+    
+  <body> 
 
     <header class="container">
-        <div class="row">
-            <nav class="col-sm-6 text-right">
-              <a href="index.html">Home</a>
-              <a href="education.html">Education</a>
-              <a href="experience.html">Experience</a>
-              <a href="contact.html">Contact me</a>
-            </nav>
-        </div>
+      <div class="left">
+        <h1>Charles Gwellem Anchang</h1>
+      </div>
+      <div class="right">
+        <a href="education.html" title="read about my education">Education</a>
+        <a href="experience.html" title="read about my experiences">Experience</a>
+        <a href="publications.html" title="my publications">Publications</a>
+        <a href="contact.html" title="how to contact me">Contact me</a>
+        <a href="index.html" title="about me">Home</a>
+      </div>
     </header>
-
     
-    <section class="jumbotron">
-        <div class="container">
-          <div class="row">
-            <div>
-              <h2>About Me</h2>
-            </div>
-          </div>
+   <section class="jumbotron">
+    <div class="container">
+        <div class="row">
+                <div>
+                    <h2 id="heading">About Me</h2>
+                </div>
         </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="container">
-        <div class="row justify-content-center">
-            <div class="col-sm-6">
+
+  <section class="container">
+            <div  class="row aboutme">
                 <img src="application pic.jpg">
-                <p>
-                    Welcome to my personal Portfolio. I am a data Scientist with passion for data-based discoveries, programming and football. Ever ssince 
-                    I was a kid, I loved understanding how various devices functioned and I liked to press any button on any device I saw in order to see the 
-                    functioal effect on the device. In my first ever coding project, I had to write a python programme that will capture bytes, 
-                    serially transmitted from a pulse oximeter module, decode them and print the results to a monitor. This programme ran on a raspberry pi. I also implemented 
-                    functionanilities to enable various interactions between the pulse oximeter and a user. Learning how to programme helped me fulfill my dreams as I was not able to 
-                    write code that affected the behaviour of a device. I subsequently combined my newly learned skill with my passion 
-                    for statistics to go into data science.
+                <p class="satisfy-regular">
+                    Welcome to my personal Portfolio. I am a data scientist with passion about discoveries based on data analyses, programming and football. Ever since 
+                    I was a kid, I loved understanding how various devices functioned and I liked to press buttons on devices in order to observe the 
+                    functioal changes. In my first ever coding project, I wrote a python programme that captured bytes, 
+                    serially transmitted from a pulse oximeter module, decode them and printed the output to a monitor. This programme ran on a raspberry pi. I also implemented 
+                    functionanilities to enable various interactions between the pulse oximeter and a user. Being able to control the behaviour of an electronic device using a 
+                    self-written programme was very fascinating for me. I subsequently combined my newly learned coding skills with my passion 
+                    for statistics to go into data science. I look forward to broaden my horizons. This portfolio website is a work in progess and will be upgraded and updated progressively.
                 </p>
             </div>
-        </div>
-    </section>
+  </section>
 
-    <footer class="container">
+  <footer class="container">
       <div class="row">
         <p class="col-sm-4">&copy; 2024 Gwellem</p>
-        <div class="col-sm-2"> <a href="https://app.datacamp.com/workspace/w/4fff099d-83f3-4373-bb06-976cd1178b25/edit"> DataCamp Workspace </a></div>
+        <div class="col-sm-2"><a href="https://app.datacamp.com/workspace/w/4fff099d-83f3-4373-bb06-976cd1178b25/edit"> DataCamp Workspace </a></div>
         <div class="col-sm-2"><a href="https://github.com/charlesgwellem"> Github</a></div>
         <div class="col-sm-2"><a href="https://www.linkedin.com/in/charles-gwellem-anchang-a91a63a1">LinkedIn </a></div>
       </div>
-    </footer>
-
-    <body>
-
-    </body>
-
+  </footer>
+  
+  </body>
+  <script src="script.js"> </script>
 </html>

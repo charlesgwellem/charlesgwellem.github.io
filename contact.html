@@ -36,11 +36,44 @@
       </section>
 
       <section class="container">
-          <div class="row">
-              <div class="col-sm-6">
-                  <h5><a href="https://www.linkedin.com">LinkedIn</a></h5>
-              </div>
-          </div>
+        <h2>Leave a message</h2>
+           <form action="mailto:charlesgwellem@yahoo.fr" method="POST" enctype="text/plain">
+
+              <section>
+                <label for="username"> Your name: </label>
+                <br>
+                <input type="text" name="username"  placeholder="Full Name" id="username" pattern="[a-zA-Z0-9]+" class="input-error" required >
+              </section>
+              
+              <section>
+                <label for="user-email">Your email:</label>
+                <br>
+                <input type="email" name="user-em" id="user-email" required placeholder="Email address">
+              </section>
+         
+              <section>
+                <label for="contact-purpose">Select contact reason</label>
+                <br>
+                <select id="contact-purpose" name="contact-option">
+                  <option disabled selected>Please Select One</option>
+                  <option value="website questions">Website Questions</option>
+                  <option value="cooperation">Co-operation</option>
+                  <option value="project">Project</option>
+                  <option value="hire">Hire</option>
+                </select>
+              </section>
+
+              <section>
+                <label for="issue-details">Please type your message</label>
+                <br>
+                <textarea id="issue-details" name="issue" rows="5" cols="50" placeholder="Provide as much detail as you can so I can respond to you.">
+                </textarea>
+              </section>
+
+              <section>
+                <input type="submit" value="submit message" class="button button-primary">
+              </section>
+           </form>
       </section>
 
       <footer class="container">

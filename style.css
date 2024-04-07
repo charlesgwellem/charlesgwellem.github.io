@@ -1,8 +1,29 @@
+/* Site Stylesheet
+  1. Global Styles
+  2. Typography Styles
+  3. Structure Styles
+  4. Module Styles
+  5. Component Styles
+  6. Page Styles
+======================================== */
+
+/* 1. Global Styles
+======================================== */
+
+
 body {
     font-family: Roboto, sans-serif;
     background-image: url('https://content.codecademy.com/courses/learn-css-selectors-visual-rules/hypnotize_bg.png');
   }
   
+/*  5. Component Styles
+======================================== */
+.input-error {
+  border-color: #FC472E;
+  width: 300px;
+}
+
+
 header{
   display: flex;
   padding: 20px 0px;
@@ -10,6 +31,14 @@ header{
   justify-content: space-between;
   align-content: space-between;
   flex-direction: row;
+}
+
+input, select, textarea{
+  margin-bottom: 15px;
+}
+
+.button-primary {
+  background-color: #00CF63;
 }
 
 .right a{
@@ -149,6 +178,15 @@ section p{
 
 }
 
+.toppings label{
+  margin-right: 25px;
+}
+
+form {
+  text-align: left;
+  height: 80%;
+  overflow: auto;
+}
 
 @media only screen and (min-width: 320px) and (max-width: 480px) and (orientation: landscape){
 

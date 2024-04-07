@@ -1,6 +1,5 @@
 
 let theHeader = document.getElementById("heading");
-let theParagraph = document.querySelector(".satisfy-regular");
 
 let newStyle = function () {
   let newColor = '';
@@ -39,7 +38,6 @@ let newStyle = function () {
   
   theHeader.style.color = newColor;
   theHeader.style.fontSize ="100px";
-  theParagraph.style.color = newColor;
 }
 
 let revertStyle = function(){
@@ -48,4 +46,4 @@ let revertStyle = function(){
 
 theHeader.onmousedown = newStyle;
 theHeader.onmouseup = revertStyle;
-theParagraph.onclick = newStyle;
+
